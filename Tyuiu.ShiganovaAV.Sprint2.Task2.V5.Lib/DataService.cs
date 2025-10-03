@@ -11,7 +11,9 @@ namespace Tyuiu.ShiganovaAV.Sprint2.Task2.V5.Lib
                 return true;
             if (y == 5 && x == 13)
                 return true;
-            if ((y >= 6 && y <= 8) && (x >= 3 && x <= 7))
+            if (y == 6 && ((x >= 3 && x <= 7) || x == 9))
+                return true;
+            if ((y == 7 || y == 8) && (x >= 3 && x <= 7))
                 return true;
             if ((y >= 6 && y <= 8) && x == 13)
                 return true;
@@ -24,5 +26,6 @@ namespace Tyuiu.ShiganovaAV.Sprint2.Task2.V5.Lib
 
             return false;
         }
+
     }
 }
